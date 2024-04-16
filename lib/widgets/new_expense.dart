@@ -44,7 +44,7 @@ class _NewExpenseState extends State<NewExpense> {
     super.dispose();
   }
 
-  void _submitData() {
+  void _submitData() { 
     final inputAmount = double.tryParse(_amountController.text);
     final amountisValid = inputAmount == null || inputAmount <= 0;
 

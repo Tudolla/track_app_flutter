@@ -32,3 +32,23 @@ class Expense{
 
  
 }
+class ExpenseBucket{
+  const ExpenseBucket({
+    required this.category,
+    required this.expenses,
+  });
+
+  final Category category;
+  final List<Expense> expenses;
+
+
+  double get total{
+    double  sum = 0; 
+
+    for(final ex in expenses){
+      sum += ex.ammount;
+    }
+    return sum;
+  }
+
+}

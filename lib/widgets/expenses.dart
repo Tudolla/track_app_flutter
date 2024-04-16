@@ -82,11 +82,11 @@ class _ExpensesState extends State<Expenses> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tracking App"),
+        title: const Text("Tracking App",style: TextStyle(color: Colors.white),),
         actions: [
           IconButton(
             onPressed: _openAddTrackerDialog,
-            icon: const Icon(Icons.add),
+            icon: const Icon(Icons.add, color: Colors.white,),
           ),
         ],
       ),
